@@ -1,16 +1,16 @@
-add_library(step_motor STATIC)
+add_library(dc_motor STATIC)
 
-target_sources(step_motor PRIVATE 
-    step_motor.c
+target_sources(dc_motor PRIVATE 
+    dc_motor.c
 )
 
-target_include_directories(step_motor PRIVATE 
+target_include_directories(dc_motor PRIVATE 
 )
 
-target_link_libraries(step_motor PRIVATE
+target_link_libraries(dc_motor PRIVATE
 )
 
-target_compile_options(step_motor PUBLIC
+target_compile_options(dc_motor PUBLIC
     -std=c23
     -Wall
     -Wextra
