@@ -22,18 +22,12 @@ typedef enum {
 
 typedef struct {
     float32_t voltage;
-    float32_t prev_position;
-    float32_t prev_speed;
     dc_motor_direction_t direction;
 } dc_motor_state_t;
 
 typedef struct {
-    float32_t min_position;
-    float32_t max_position;
     float32_t min_speed;
     float32_t max_speed;
-    float32_t min_acceleration;
-    float32_t max_acceleration;
     float32_t ref_voltage;
 } dc_motor_config_t;
 
