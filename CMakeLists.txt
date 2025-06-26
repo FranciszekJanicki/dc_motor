@@ -4,10 +4,8 @@ target_sources(dc_motor PRIVATE
     dc_motor.c
 )
 
-target_include_directories(dc_motor PRIVATE 
-)
-
-target_link_libraries(dc_motor PRIVATE
+target_include_directories(dc_motor PUBLIC
+    ${CMAKE_CURRENT_SOURCE_DIR}
 )
 
 target_compile_options(dc_motor PUBLIC
