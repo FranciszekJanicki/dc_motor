@@ -17,7 +17,9 @@ dc_motor_err_t dc_motor_deinitialize(dc_motor_t* motor);
 
 dc_motor_err_t dc_motor_reset(dc_motor_t* motor);
 
-dc_motor_err_t dc_motor_set_position(dc_motor_t* motor, float32_t position, float32_t delta_time);
+dc_motor_err_t dc_motor_set_position(dc_motor_t* motor,
+                                     float32_t position,
+                                     float32_t delta_time);
 dc_motor_err_t dc_motor_set_speed(dc_motor_t* motor, float32_t speed);
 dc_motor_err_t dc_motor_set_acceleration(dc_motor_t* motor,
                                          float32_t acceleration,
