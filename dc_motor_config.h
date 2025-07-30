@@ -3,6 +3,10 @@
 
 #include <stdint.h>
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 typedef float float32_t;
 
 typedef enum {
@@ -35,5 +39,9 @@ typedef struct {
     dc_motor_err_t (*device_set_voltage)(void*, float32_t);
     dc_motor_err_t (*device_set_direction)(void*, dc_motor_direction_t);
 } dc_motor_interface_t;
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif // DC_MOTOR_DC_MOTOR_CONFIG_H

@@ -4,6 +4,10 @@
 #include "dc_motor_config.h"
 #include <stdbool.h>
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 typedef struct {
     dc_motor_config_t config;
     dc_motor_interface_t interface;
@@ -24,5 +28,9 @@ dc_motor_err_t dc_motor_set_speed(dc_motor_t* motor, float32_t speed);
 dc_motor_err_t dc_motor_set_acceleration(dc_motor_t* motor,
                                          float32_t acceleration,
                                          float32_t delta_time);
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif // DC_MOTOR_DC_MOTOR_H
